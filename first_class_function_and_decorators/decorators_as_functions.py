@@ -13,5 +13,5 @@ def function_to_call_wrapper():
 	print("Fourth, hmmm... calling org_function via decorator_function")
 
 #expanded form of decorator function instead of using "@"
-decorated_function=decorator_function(function_to_call_wrapper)
-decorated_function()
+decorateeeeed_function=decorator_function(function_to_call_wrapper)
+decorateeeeed_function()
