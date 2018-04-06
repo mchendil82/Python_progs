@@ -18,14 +18,14 @@ def decorator_function(passed_by_decorator_to_call_wrapper):
 def function_to_call_wrapper():
 	#pass
 	print("Third, I should be executed by some inner_function return value")
-
-
+#calling wrapper function without args
 function_to_call_wrapper()
 
+#setting up decorator for wrapper with arguments
 @decorator_function
 def function_to_call_wrapper(fname,lname):
 	print("Name: "+fname + " "+lname)
-
+#Calling wrapper function with *args so that function_to_call_wrapper() accepts dynamic number of arguments
 function_to_call_wrapper("Konda Chendil","Munireddy")
 
 
