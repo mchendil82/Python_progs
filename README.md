@@ -11,7 +11,7 @@ self keyword:
 
 1) self is keyword which indicates that object itself passed as default argument to a function when  a object is intialized outside of a class
 2) self keyword can be in any name  but tradiationally this is the name used to commonly to store a object 
-3) once the variables are stored in the object as intance variables it can be used throught class as self.variable=value rather just a variable=value inside the class function
+3) once the variables are stored in the object as intance variables  as self.variable=value rather just a variable=value inside the class function, it can be used throught class
 
 __init__
 ========
