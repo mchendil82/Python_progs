@@ -37,5 +37,3 @@ function_to_call_wrapper("Konda Chendil","Munireddy")
 
 #the above function_to_call_wrapper() is equal to intialize the class object as follows: function_to_callwrapper=decorator_class()
 #with some attributes
-
-
