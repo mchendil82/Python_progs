@@ -18,3 +18,5 @@ __init__
 1) __init__ is used default to intialize the object (kind of constructor but technically it is not constructor since constructor (say in c++)  should create and intialize by a function with same name of class ) but whereas in python object is created by when you intialize instance and passed to a function or __init__ function which intialize the object with some variables
 2) in python everything is an object so there is no concept constructing an object
 https://www.programiz.com/article/python-self-why
+
+3) __call__ -> Generally Object is not callable... Unless you use __call__ the object can't be as function.... usecase would decorator object called as functions...

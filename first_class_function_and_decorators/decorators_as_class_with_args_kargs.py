@@ -13,6 +13,8 @@ class decorator_class(object):
 	
     def __init__(self, orignal_function):
     	self.orignal_function=orignal_function
+
+#__call__ makes object to be callable just like and so we are able via function_to_call_wrapper()
     def __call__(self, *args):
     	print(args)
     	print("call method executed")
