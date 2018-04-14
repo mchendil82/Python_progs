@@ -1,0 +1,59 @@
+
+What is the difference between include of C++ and import of Java or any other langugage ?
+cpp java
+asked Aug 5, 2015 by utq111
+2 Answers
+1. #include directive makes the compiler go to the C/C++ standard library and copy the code from the header files into the program. As a result, the program size increases, thus wasting memory and processor’s time. 
+import statement makes the JVM go to the Java standard library, execute the code there , and substitute the result into the program. Here, no code is copied and hence no waste of memory or processor’s time.hence import is an efficient mechanism than #include. 
+
+2. WORA (Write Once Run Any Where) 
+
+3. public class mainwithoutargs 
+{ 
+public static void main() 
+{ 
+System.out.println("im in main w/o string args[]"); 
+} 
+} 
+
+here the program will successfully compiled but not run because the string args in main method is the string array which holds any arguments invoked on the command line. Java requires you to have a main with signature(string[]) so as to run that application. 
+
+Try the below code. 
+public class mainwithoutargs 
+{ 
+//overloaded method. 
+public static void main() 
+{ 
+System.out.println("im in your main w/o string args[]"); 
+} 
+public static void main(String args[]) 
+{ 
+System.out.println("im in my main w/o string args[]"); 
+//calling overloaded method. 
+main(); 
+} 
+} 
+
+Now it is clear the main without String args[] is treated as a normal method. 
+
+
+4.You can run Java applications just fine without setting the PATH environment variable. Or, you can optionally set it as a convenience. 
+
+Set the PATH environment variable if you want to be able to conveniently run the executables (javac.exe, java.exe, javadoc.exe, and so on) from any directory without having to type the full path of the command. If you do not set the PATH variable, you need to specify the full path to the executable every time you run it, such as: 
+
+C:\Java\jdk1.7.0\bin\javac MyClass.java 
+The PATH environment variable is a series of directories separated by semicolons (;). Microsoft Windows looks for programs in the PATH directories in order, from left to right. You should have only one bin directory for the JDK in the path at a time (those following the first are ignored), so if one is already present, you can update that particular entry. 
+
+The following is an example of a PATH environment variable: 
+
+C:\Java\jdk1.7.0\bin;C:\Windows\System32\;C:\Windows\;C:\Windows\System32\Wbem 
+
+Thanks!Hope it helped :)
+
+answered Aug 6, 2015 by Abhishek Somani
+
+include is a preprocessor directive and import is a Java language construct. include statement simply puts all contents of that file into your code
+so it works as macro i.e. the whole content is included at the place where it is written.
+
+whereas Java's import just saves you from writing its fully qualified
+name i.e. instead of writing java.lang.math.ceil you can simply write ceil if you have imported math class before in your class.
