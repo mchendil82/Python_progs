@@ -29,7 +29,7 @@ Symbolic representation of decorator:
 
     @decorator
     def function_to_call_wrapper(if any arguments):
-    <"some default code of wrapper">             //@decorator and function_to_call_wrapper defined...
+    <"some default code of function to call wrapper">             //@decorator and function_to_call_wrapper defined...
     
     function_to_call_wrapper() //to execute wrapper function returned via decortor (from "return wrapper as defined above")
  
