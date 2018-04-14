@@ -11,7 +11,9 @@ Decorator functions:
 
 Symbolic representation of decorator:
 ====================================
-def decorator(pass function_to_call_wrapper):
+    
+    def decorator(pass function_to_call_wrapper):
+    
     <"some default code of decorator">
     
     <"code of  function_to_call_wrapper" > 
@@ -25,12 +27,14 @@ def decorator(pass function_to_call_wrapper):
 
     return wrapper //without executing it or just function is returned....
 
-
-@decorator
-def function_to_call_wrapper(if any arguments):
-    <"some default code of wrapper">             //@decorator and function_to_call_wrapper defined... 
+    @decorator
+    def function_to_call_wrapper(if any arguments):
+    <"some default code of wrapper">             //@decorator and function_to_call_wrapper defined...
+    
+    function_to_call_wrapper() //to execute wrapper function returned via decortor (from "return wrapper as defined above")
+ 
 	
-function_to_call_wrapper() //to execute wrapper function returned via decortor (from "return wrapper as defined above")
+
 
 
 
