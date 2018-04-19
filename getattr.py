@@ -1,4 +1,5 @@
 class Test(object):
+    hello="ttttt"
     def __init__(self):
         self.a = 'A'
         self.b = 'B'
@@ -17,6 +18,7 @@ print(t.a)
 print(t.b)
 print(t.c)
 print(t.f)
+print(type(t.hello))
 
 print(getattr(t, 'd'))
 print(getattr(t, 'f'))
