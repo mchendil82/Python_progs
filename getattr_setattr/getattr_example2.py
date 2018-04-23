@@ -4,7 +4,7 @@
 
 
 #getattr propety decorators(python builtin property decorator function) set function allows to set or access function as attributes that way the function can
-#be changed with knowing to user safely... ideal use case of a "builtin decorator" function
+#be changed with knowing to user, safely... ideal use case of a "builtin decorator" function
 
 class emp:
 	def __init__(self, first, last):
