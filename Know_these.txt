@@ -4,7 +4,7 @@ Piece of code from a module of the Linux kernel, which uses snake case for ident
 Snake case (or snake_case) is the practice of writing compound words or phrases in which the elements are separated with one underscore character (_) and no spaces, with each element's initial letter usually lowercased within the compound and the first letter either upper or lower case—as in "foo_bar" and "Hello_world". It is commonly used in computer code for variable names, and function names, and sometimes computer filenames.[1] At least one study found that readers can recognize snake case values more quickly than camelCase.[2]
 
 
-Python private variables:
+Python private variables(just naming convention):
 =========================
 Python private variables are one which start with single underscore or double underscore and they are consider to be private. 
 
@@ -22,6 +22,8 @@ class var:
 
 
 
+
+Python private are called as weak indicators because like in Java it doesn't have "private" type and it allows python programmer to mention via "-" or "--" naming convention.... Hence it is called "just naming convention and weak indicator"
 
 Pyton Mangling:
 -==============
