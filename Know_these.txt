@@ -1,0 +1,29 @@
+Snake case
+===========
+Piece of code from a module of the Linux kernel, which uses snake case for identifiers.
+Snake case (or snake_case) is the practice of writing compound words or phrases in which the elements are separated with one underscore character (_) and no spaces, with each element's initial letter usually lowercased within the compound and the first letter either upper or lower case—as in "foo_bar" and "Hello_world". It is commonly used in computer code for variable names, and function names, and sometimes computer filenames.[1] At least one study found that readers can recognize snake case values more quickly than camelCase.[2]
+
+
+Python private variables:
+=========================
+Python private variables are one which start with single underscore or double underscore and they are consider to be private. 
+
+Python really doesn't consider this as a private variables but it enforces by means of mangling the class names(when "__" double-underscored used).. Using underscores or double underscores in front of variables or function names are considered to be private...
+
+1) _variablename or _functionname (single underscore) is to be private and cannot seen by other classes or nor imported
+2) __variablesname or __functionname (double underscore) is to considered to be semi-private and can seen or imported by other classes
+
+ex:
+===
+class var:
+	self.pubvar = "1_public"
+	self._private="2_private" #this variable can't be accessed outside or imported outside
+	self.__pvriate="3_sem_private" #this can be imported by sub-class inheriting the parent class safely... and 								it also avoid same name conflict if exist both parent class and sub classes 								by joining class names with variable name called mangling....
+
+
+
+
+Pyton Mangling:
+-==============
+
+Python Mangling means comibining the variables and functions or methods start with double underscore "__" or single underscore "_" with the class names..  see the above semi priavte example....
