@@ -5,9 +5,9 @@ Decorator functions:
 
 2) Mainly,it allows to access the scope of inner_functions or wrapper functions from outside
 
-3) Thinks as Decorator function take everything inside its "function_to_call_wrapper" code (immediate function defined under decorator) and its variables passed as available to all the functions under decorator (passed first class function) before the wrapper function... and it return back to function_to_call_wrapper() which called is outside outside of decorator...  
+3) Thinks as Decorator function take everything inside its "function_to_call_wrapper" code (immediate function defined under decorator) and its variables passed as available to all the functions under decorator (passed first class function) before the wrapper function... and it return back to function_to_call_wrapper() which is called outside of decorator...  
 
-In simple words, wrapper function get everything (including variables) from function_to_call_wrapper() and executes it's code and  function_to_call_wrapper code (which is executed via "return function_to_call_wrapper()" and it has defined like this, inside wrapper) and return back to original function_to_call_wrapper called outside (comibined result of wrapper and function_to_call_wrapper)
+In simple words, wrapper function get everything (including variables) from function_to_call_wrapper() and executes it's code and  function_to_call_wrapper code (which is executed via "return function_to_call_wrapper()" and it has to be defined like this, inside wrapper) and return back to original function_to_call_wrapper called outside (comibned result of wrapper function and function_to_call_wrapper())
 
 
 Symbolic representation of decorator:
