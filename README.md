@@ -15,8 +15,40 @@ self keyword:
 
 __init__
 ========
-1) __init__ is used default to intialize the object (kind of constructor but technically it is not constructor since constructor (say in c++)  should create and intialize by a function with same name of class ) but whereas in python object is created by when you intialize instance and passed to a function or __init__ function which intialize the object with some variables
-2) in python everything is an object so there is no concept constructing an object
+1) __init__ is used default to intialize the object (kind of constructor but technically it is not constructor since constructor (say in c++)  should create and intialize by a function with same name of class )but whereas in python object is created by when you intialize instance and passed to a function or __init__ function which intialize the object with some variables
+There are three pieces of terminology associated with this topic: declaration, initialization and instantiation.
+
+**In Java:**
+
+Instantiation
+
+This is when memory is allocated for an object. This is what the new keyword is doing. A reference to the object that was created is returned from the new keyword.
+
+Initialization
+
+This is when values are put into the memory that was allocated. This is what the Constructor of a class does when using the new keyword.
+
+A variable must also be initialized by having the reference to some object in memory passed to it.
+
+Declaration
+
+This is when you state to the program that there will be an object of a certain type existing and what the name of that object will be.
+
+Example of Initialization and Instantiation on the same line
+
+SomeClass s; // Declaration
+s = new SomeClass(); // Instantiates and initializes the memory and initializes the variable 's'
+Example of Initialization of a variable on a different line to memory
+
+void someFunction(SomeClass other) {
+    SomeClass s; // Declaration
+    s = other; // Initializes the variable 's' but memory for variable other was set somewhere else
+}
+I would also highly recommend reading this article on the nature of how Java handles passing variables.
+
+**But in python**
+
+ in python everything is an object so there is no concept constructing an object
 https://www.programiz.com/article/python-self-why
 
-3) __call__ -> Generally Object is not callable... Unless you use __call__ the object can't be as function.... usecase would decorator object called as functions...
+__call__ -> Generally Object is not callable... Unless you use __call__ the object can't be as function.... usecase would decorator object called as functions...
