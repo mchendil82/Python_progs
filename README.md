@@ -15,7 +15,15 @@ self keyword:
 
 __init__
 ========
-1) __init__ is used default to intialize the object (kind of constructor but technically it is not constructor since constructor (say in c++)  should create and intialize by a function with same name of class )but whereas in python object is created by when you intialize instance and passed to a function or __init__ function which intialize the object with some variables
+Constructors are usually to intialize some default values to an object
+
+1) __init__ is used default to intialize the object (kind of constructor but technically it is not constructor since constructor (say in c++)  should create and intialize by a function(constructor function) with same name of class )but whereas in python object is created by when you intialize instance and passed to a function or __init__ function which intialize the object with some variables
+
+In general constructor is construct an object (creates object in a memory and allocate variables placement in the moemory.. See how in jave, declaration(pointer of memory address), Initialization (put the valuest to pointer referenced memory) and Instantiation (return memory address for direct use)). These all goes hand in hand togehter because constructor call function will look for "exactly class named function" and executest it to put the value in the object referenced memory (Initialization) and return the object with value (Instantiation) basically object with referenced memory address.
+
+but in python when we say foo=Test(), see object referenced and created here already and then it is available to just intialize the values to fill the memory using __init__ function to initialize the values.
+
+
 There are three pieces of terminology associated with this topic: declaration, initialization and instantiation.
 
 **In Java:**
@@ -38,6 +46,7 @@ Example of Initialization and Instantiation on the same line
 
 SomeClass s; // Declaration
 s = new SomeClass(); // Instantiates and initializes the memory and initializes the variable 's'
+
 Example of Initialization of a variable on a different line to memory
 
 void someFunction(SomeClass other) {
