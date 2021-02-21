@@ -1,5 +1,11 @@
-'''calculate factorial for a given number using memoziation principle and provide the result. This is mainly to avoid reptative loops and to resue existing results as factorial depdends in previous series result .
-Also memoziation helps to execution faster for large number special for this scenario'''
+'''calculate factorial for a given number using memoziation principle and provide the result. This is mainly to avoid reptative loops and to resue existing results as factorial depdends 0n previous series result .
+Also memoziation helps for faster execution since result are referred from cache and specially it helps for faster factorial calculation rather then repetitive if else statements.. we are using __call__ method refere dict as cache here
+
+But there various cache techniques are there which can be referred here: https://www.pythoncontent.com/memoization-in-python/ 
+addtional ref: https://stackoverflow.com/questions/18939731/why-memoization-can-speed-up-factorial-in-python-even-if-there-is-no-repeated-co 
+
+Below program is referenc from :  https://stackoverflow.com/questions/5824881/python-call-special-method-practical-example/5825081 
+''
 
 class Factorial(object):    
     def __init__(self):
@@ -16,7 +22,8 @@ calfac=Factorial()
 for n in range(0, 5):
     print("{}! = {}". format(n, calfac(n)))
 
-'''Also __call__ method is useful specially to implement API's.. example:  https://stackoverflow.com/questions/5824881/python-call-special-method-practical-example 
+'''
+Also __call__ method is useful specially to implement API's.. example:  https://stackoverflow.com/questions/5824881/python-call-special-method-practical-example 
 
 I find it useful because it allows me to create APIs that are easy to use (you have some callable object that requires some specific arguments), and are easy to implement because you can use Object Oriented practices.
 
@@ -48,11 +55,4 @@ sha224 = Hasher(hashlib.sha224)
 sha256 = Hasher(hashlib.sha256)
 sha384 = Hasher(hashlib.sha384)
 sha512 = Hasher(hashlib.sha512)
-
-
-
-
-
-
-
 '''
