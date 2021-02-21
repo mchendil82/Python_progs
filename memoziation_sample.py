@@ -5,7 +5,7 @@ But there various cache techniques are there which can be referred here: https:/
 addtional ref: https://stackoverflow.com/questions/18939731/why-memoization-can-speed-up-factorial-in-python-even-if-there-is-no-repeated-co 
 
 Below program is referenc from :  https://stackoverflow.com/questions/5824881/python-call-special-method-practical-example/5825081 
-''
+'''
 
 class Factorial(object):    
     def __init__(self):
