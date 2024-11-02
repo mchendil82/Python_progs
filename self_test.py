@@ -8,3 +8,9 @@ class test(object):
 
 obj=test("5")
 obj.display()
+
+
+
+
+
+

@@ -18,3 +18,8 @@ print(bar)
 
 print(foo())
 print(bar())
+
+#Assert samples
+t=True
+assert 10==10
+assert t is False 

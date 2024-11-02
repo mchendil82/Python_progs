@@ -1,0 +1,42 @@
+    1: '''
+       m=set()
+       s1=[4,5,6]
+       print(s1[2:])
+       print(s1)
+       l=s1.__len__()
+       '''
+       
+       '''
+       for lowerindex in range(0,l):
+           print(lowerindex)
+           for slicing in range (0,l):        
+        '''       
+       
+       
+    2: class py_solution:
+    1:     def sub_sets(self, sset):
+    1:         self.x=1
+    1:         return self.subsetsRecur([], sset)
+              
+           
+    1:     def subsetsRecur(self, current, sset, *args):
+   15:         print(args)
+   15:         print("sset"+str(sset))
+   15:         if sset:            
+    7:             print(self.x)            
+    7:             print("c" +str(current))            
+    7:             self.x +=1
+    7:             print("---------")           
+    7:             rt=self.subsetsRecur(current, sset[1:],"called first function") + self.subsetsRecur(current +[sset[0]], sset[1:],"called second function")                   
+    7:             print("priting rt")
+    7:             print(rt)
+    7:             return rt
+               #print("outside "+str(self.x))
+    8:         print("=================")
+    8:         print(current)  
+    8:         return [current]
+       
+       #print(py_solution().sub_sets([4,5,6,8,9,0]))
+    1: py_solution().sub_sets([4,5,6])
+       
+       

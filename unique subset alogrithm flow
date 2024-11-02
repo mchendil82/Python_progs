@@ -1,0 +1,10 @@
+unique subset alogrithm flow
+set=[4,5,6,7]
+unq=[4]=[5,6,7]'
+unq=[]
+for cr_set_index in len(set):
+  unq.append
+  cr  cr+id1 crid2 crid3
+[[4],[4,5],[4,6][4,7]] cr+id2  cr+id3
+[[4],[4,5],[4,6][4,7],[4,5,6][4,6,7]] cr+id3
+[[4],[4,5],[4,6][4,7],[4,5,6][4,6,7],[4,5,6,7]]

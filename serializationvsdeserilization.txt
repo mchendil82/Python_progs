@@ -1,0 +1,20 @@
+JSON is a format that encodes objects in a string. Serialization means to convert an object into that string, and deserialization is its inverse operation (convert string -> object).
+
+When transmitting data or storing them in a file, the data are required to be byte strings, but complex objects are seldom in this format. Serialization can convert these complex objects into byte strings for such use. After the byte strings are transmitted, the receiver will have to recover the original object from the byte string.
+ This is known as deserialization.
+
+ Say, you have an object:
+
+{foo: [1, 4, 7, 10], bar: "baz"}
+serializing into JSON will convert it into a string:
+
+'{"foo":[1,4,7,10],"bar":"baz"}'
+which can be stored or sent through wire to anywhere. The receiver can then deserialize this string to get back the original object. {foo: [1, 4, 7, 10], bar: "baz"}.
+
+
+#In the context of data storage, serialization (or serialisation) is the process of translating data structures or object state into a format that can be stored (for example, in a file or memory buffer) or transmitted (for example, across a network connection link) and reconstructed later. [...]
+The opposite operation, extracting a data structure from a series of bytes, is deserialization. From Wikipedia
+
+import json
+json_data = json.dumps(data, indent=2) # serialize
+restored_data = json.loads(json_data) # deserialize
